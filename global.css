@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
     height: 100%;
     /* background-color: rgb(255, 253, 251); */
-    color: #555;
+    color: #333;
     line-height: 1.5em;
 }
 
@@ -53,6 +53,12 @@ ul {
 
 ul li::before {
     content: "- ";
+}
+
+.footnote {
+    font-size: small;
+    border-top: 0.02em solid;
+    margin-top: 2em;
 }
 
 .section {
