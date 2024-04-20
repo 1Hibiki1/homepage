@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Re-learning AI/ML from scratch<br><p style="font-size: 0.5em; font-weight: 100; margin-top: 1em;">18 Apr 2024</p></h1>
+    <h1>Re-learning AI/ML from scratch<br><p style="font-size: 0.5em; font-weight: 100; margin-top: 1em;">20 Apr 2024</p></h1>
     <dev class="nav">
         <a href="../index.html">
             < home</a>
@@ -17,25 +17,23 @@
     <div class="section">
         <h3>The why</h3>
         <p>
-            I've recently been looking at LLMs, and I think I somewhat "know" their architecture at least at a high level. This kinda feels like how I used to write kernels before I went to uni, I had a lot of fun and thought I understood stuff, but I only really got a decent understanding after taking all those systems classes at uni. I can imagine its the same for AI/ML. I could look at one or two things that I think are important or relevant, but having a broad overview of the field will help a lot. I cant really say that I "understand" stuff in ML, I just know that they exist. If I hav learned one thing in systems, it's that really understanding what u r working with helps IMMENSELY. For ML, I want to understanding how the science, software (libraries etc), and the hardware work in detail. I'll start with the science.
+            I've recently been looking at LLMs, and I think I somewhat have an idea about their architecture at least at a high level. This kinda feels like how I used to write kernels before I went to uni, I had a lot of fun and thought I understood stuff, but I only really acquired a decent understanding after taking all those systems classes at uni. I can imagine its the same for AI/ML. I could look at one or two things that I think are important or relevant, but having a broad overview of the field first will probably help a lot. I cant really say that I "understand" stuff in ML, I just know that they exist. If I hav learned one thing in systems, it's that really understanding what u r working with helps IMMENSELY. For ML, I want to understanding how the science, software tools (libraries etc), and the hardware work in detail. I'll start with the science.
         </p>
     </div>
     <div class="section">
         <h3>The what</h3>
         <p>
             I'm gonna follow CMU courses, cuz most of them have at least their lecture slides available publicly. For now, I plan to do these in sequence:
-            <br><br>
             <ul>
                 <li><a href="https://web2.qatar.cmu.edu/~gdicaro/15281/#schedule" target="_blank" rel="noopener noreferrer">15-281: AI</a></li>
                 <li><a href="https://web2.qatar.cmu.edu/~gdicaro/10315/#schedule" target="_blank" rel="noopener noreferrer">10-315: Intro to ML</a></li>
                 <li><a href="https://deeplearning.cs.cmu.edu/S24/index.html" target="_blank" rel="noopener noreferrer">11-785: Intro to DL</a></li>
-                <li><a href="https://www.cs.cmu.edu/~mgormley/courses/10425/schedule.html" target="_blank" rel="noopener noreferrer">10-625: Convex Optimization</a><span style="font-size: 0.7em;"> (maybe)</span></li>
                 <li><a href="https://dlsyscourse.org/lectures/" target="_blank" rel="noopener noreferrer">10-714: DL sys</a></li>
                 <li><a href="https://llmsystem.github.io/llmsystem2024spring/docs/Syllabus" target="_blank" rel="noopener noreferrer">11-868: LLM sys</a></li>
                 <li><a href="https://cmu-multicomp-lab.github.io/mmml-course/fall2022/schedule/" target="_blank" rel="noopener noreferrer">11-777: Multimodal ML</a></li>
+                <li><a href="https://www.cs.cmu.edu/~mgormley/courses/10425/schedule.html" target="_blank" rel="noopener noreferrer">10-625: Convex Optimization</a><span style="font-size: 0.7em;"> (maybe)</span></li>
             </ul>
-            <br>
-            That being said, I'm not just gonna look at the lecture slides/videos/readings, i'll very likely look outside too. The courses are more like a structured index of topics that are probably helpful to know about. The most important thing would be to implement everything I learn, cuz if I cant implement it then I probably don't understand it. Here's an overview of each class and what they cover (as I understand it):
+            That being said, I'm not just gonna look at the lecture slides/videos/readings, I'll very likely look outside too. The courses are more like a structured index of topics that are probably helpful to know about. The most important thing would be to implement everything I learn, cuz if I cant implement it then I probably don't understand it. Here's an overview of each class and what they cover (as I understand them):
             <br><br>
             <h4>15-281 AI</h4>
             <p>
@@ -45,7 +43,7 @@
                     <li>Uninformed and Informed search</li>
                     <li>Adversarial Search</li>
                     <li>Classical Planning</li>
-                    <li>Constraint Satisfaction Problems</li>
+                    <li>Constraint Satisfaction Problems (sounds like linear programming?)</li>
                     <li>Convex Optimization</li>
                     <li>Integer Optimization</li>
                     <li>Bayesian Networks</li>
@@ -54,8 +52,106 @@
                     <li>Reinforcement Learning</li>
                     <li>Game Theory</li>
                 </ul>
-                Wow, that's a lot. Well, there's only one to four lectures on each of these, so it's not covered in depth (which makes sense, this is an introductory class). 
+                There's only one to four lectures on each of these, so they're not covered in depth (which makes sense, this is an introductory class). It does look like I will have to dust off my probability textbook, I took it in my freshman year and don't remember much.
             </p>
+            <br>
+            <h4>10-315 Intro to ML</h4>
+            <p>
+                Oh boy. I've "officially" taken this class (I took 281 too but dropped it right at the end, and I dont remember much from it). But as always, I wasn't able to learn as much as I'd liked to have from "taking" the class, so I'll do it again myself. This was just last sem so I'm a lot more familiar with the topics:
+                <ul>
+                    <li>KNN</li>
+                    <li>Decision Trees</li>
+                    <li>Linear Regression</li>
+                    <li>Kernel Regression</li>
+                    <li>Bayes Optimal Classifier</li>
+                    <li>MLE/MAP</li>
+                    <li>Logistic Regression</li>
+                    <li>Ensemble Methods</li>
+                    <li>MLPs</li>
+                    <li>CNNs</li>
+                    <li>PCA, clustering</li>
+                    <li>Gaussian Mixture Models</li>
+                    <li>SVM</li>
+                    <li>Learning Theory</li>
+                </ul>
+                Again, only one to three lectures on each topic, so a very broad class. Which, I think, is gud for an intro to ML class. This one is gonna be fun.
+            </p>
+            <br>
+            <h4>11-785 Intro to DL</h4>
+            <p>
+                I've only heard stories of suffering from people who took this class. Here's what I think the class covers from looking at the lecture topics:
+                <ul>
+                    <li>ANN training (backpropagation, SGD, momentum, normalization, dropout, etc)</li>
+                    <li>CNNs</li>
+                    <li>RNNs and LSTMs</li>
+                    <li>LMs, transformers</li>
+                    <li>VAEs</li>
+                    <li>Diffusion</li>
+                    <li>GANs</li>
+                    <li>Graph neural nets</li>
+                </ul>
+                Many lectures are spent on ANN basics like training, convergence issues, normalization, dropout, etc. Fewer lectures spent on specific architectures. Seems like a really good class to learn the basics. The recitations and the bootcamps seem to be as important as the lectures, and I'm guessing the homeworks and quizzes is where all the pain comes from. It's good that implementation is emphasized as much as the theory is, that's the kind of classes I'm familiar with from systems land.
+            </p>
+            <br>
+            <h4>10-714 DLsys</h4>
+            <p>
+                This was a class I came across,, I think on youtube? (sometimes the recs r good). I thought this would be a perfect class for me to learn about DL, cuz I love systems and it has both "deep learning" and "systems" in its title.
+                <ul>
+                    <li>Backprop, autograd</li>
+                    <li>NN library implementations/abstractions</li>
+                    <li>Hardware accelerators, GPUs</li>
+                    <li>CNNs & their implementation</li>
+                    <li>RNNs & their implementation</li>
+                    <li>Transformers & implementation</li>
+                    <li>Distributed training (brief)</li>
+                    <li>GANs & implementation</li>
+                    <li>Model Deployment</li>
+                </ul>
+                Wow... Sounds like a very implementation heavy class, probably much more so than intro to DL. I'm really excited for this one.
+            </p>
+            <br>
+            <h4>11-868 LLM sys</h4>
+            <p>
+                This one seems to be more focused on LLMs (well, that's obvious from the title).
+                <ul>
+                    <li>GPU programming, autograd, DL framework design</li>
+                    <li>Transformers, Tokenization, LLaMA, GPT3</li>
+                    <li>Acceleration of transformers on GPUs</li>
+                    <li>Distributed training</li>
+                    <li>Serving (Triton, LightLLM)</li>
+                    <li>Quantization & compression (GPTQ), LoRA & QLoRA</li>
+                    <li>ZeRO</li>
+                    <li>Ocra</li>
+                    <li>PagedAttention</li>
+                    <li>Jax</li>
+                    <li>MoE, FlashAttention</li>
+                    <li>Speculative decoding, RAG</li>
+                </ul>
+                That pretty much sounds like the popular recent research that I've heard of which have also been widely implemented. I think I've been trying to jump into these without going through all the basics first. Explains why I'm not having a great time...
+            </p>
+            <br>
+            <h4>11-777 MMML</h4>
+            <p>
+                "Multimodal ML". This shud act as a good segue into other kinds of models than just LMs. I really want to look at diffusion models, but it's impractical for me at this moment to jump unto those. I'm not going to talk about the material, because the topics are pretty much alien to me (<a href="https://cmu-multicomp-lab.github.io/mmml-course/fall2022/schedule/" target="_blank" rel="noopener noreferrer">feel free to have a look yourself!</a>).
+            </p>
+            <br>
+            <h4>10-625 Convex Optimization</h4>
+            <p>
+                This is a weird one. I knew about this class cuz a friend had some trouble getting in, and we talked about it at the time (it was quite an amusing chain of events). At a glance, it looked like this would be an important class for learning more about training. I asked him whether it's worth it, and he said:
+                <br>
+                <img src="../images/conv_optim_meh.pic.jpg" alt="interesting convo" style="max-height: 500px;">
+                <br>
+                He's a ML guy and I don't know much about this, so I'll have to take his word on that. But it doesn't hurt to learn, right? So I might do this one too.
+            </p>
+        </p>
+    </div>
+    <div class="section">
+        <h3>Moving Forward</h3>
+        <p>
+            This is probably going to take a lot of time, with an expected 10-20hr/week load @ 4 months per course. Time which I don't think I have. But,, if I don't do all this, I'll probably never make it, so it doesn't hurt to try. It does seem like the first class (AI) may be skippable, but I'll do it anyway and maybe not spend <i>too</i> much time on it (tho it does seem to be the easiest of the bunch). I won't start right away, but probably in a week or two from now when I hopefully will have time. I plan on posting my progress on this site approximately weekly, with detailed reports on what I learned/found interesting. I'll hopefully no longer be an imposter in the ML community by the end of this.
+        </p>
+        <p>
+        <b><em>Also, if you have any comments or suggestions, feel free to DM me on <a href="https://twitter.com/Hibiki534" target="_blank" rel="noopener noreferrer">twitter</a>!</em></b>
         </p>
     </div>
     <footer><a href="https://youtu.be/jzN5fKhwUuw" style="color: inherit; text-decoration: none;" target="_blank" rel="noopener noreferrer">
